@@ -1,4 +1,8 @@
-
+/* 
+á´„Ê€á´‡á´€á´›á´‡á´… Ê™Ê :  ð™²ðšˆð™±ð™´ðš ð™°ðš‚ð™·ðš„ðš„ ð™¾ð™µð™²
+contact me 94760091093
+á´˜ÊŸá´‡á´€êœ±á´‡ á´…á´É´á´› Ê€á´‡á´á´á´ á´‡ á´á´¡É´á´‡Ê€ á´„Ê€á´‡á´…Éªá´›êœ± ðŸ’€ðŸ“
+*/
 
 const { cmd } = require('../command');
 const yts = require('yt-search');
@@ -8,7 +12,7 @@ cmd({
   pattern: "dk2",
   desc: "Download songs.",
   category: "download",
-  react: '?',
+  react: 'ðŸŽ§',
   filename: __filename
 }, async (messageHandler, context, quotedMessage, { from, reply, q }) => {
   try {
@@ -27,33 +31,33 @@ cmd({
     const result = await ddownr.download(songUrl, 'mp3'); // Download in mp3 format
     const downloadLink = result.downloadUrl; // Get the download URL
 
-    let songDetailsMessage = `*?? ????? ?????????? ??*
+    let songDetailsMessage = `*ã€˜ã€˜ ð€ð”ðƒðˆðŽ ðƒðŽð–ðð‹ðŽð€ðƒð„ð‘ ã€™ã€™*
 
-*?=========================?*
-*¨q©¬©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¬?*
-*©§* ? *Title:* *${yts.title}*
-*©§* 
-*©§* ? *Duration:* *${yts.timestamp}*
-*©§* 
-*©§* ? *Views:* *${yts.views}*
-*©§* 
-*©§* ? *Author:* *${yts.author.name}*
-*©§* 
-*©§* ? *Link:* *${yts.url}*
-*¨t©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¬?*
+*â—ˆ=========================â—ˆ*
+*â•­â”ˆâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ˆâŠ·*
+*â”ƒ* ðŸŽ¶ *Title:* *${yts.title}*
+*â”ƒ* 
+*â”ƒ* â³ *Duration:* *${yts.timestamp}*
+*â”ƒ* 
+*â”ƒ* ðŸ‘€ *Views:* *${yts.views}*
+*â”ƒ* 
+*â”ƒ* ðŸ‘¤ *Author:* *${yts.author.name}*
+*â”ƒ* 
+*â”ƒ* ðŸ”— *Link:* *${yts.url}*
+*â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ˆâŠ·*
 
-*???©¥©­©¥©­©¥©­©¥©­©¥©­©¥©­©¥©­©¥©­©¥©­©¥???*
+*â¦â¦‚â¦â”â”‰â”â”‰â”â”‰â”â”‰â”â”‰â”â”‰â”â”‰â”â”‰â”â”‰â”â¦â¦‚â¦*
 
-*? Reply below number*
+*ðŸ”¢ Reply below number*
 
-*¨q©¬©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¬?*
-*©§1 ©¦??? AUDIO DOWNLOAD* ?
-*©§2 ©¦??? VOICE DOWNLOAD* ?
-*¨t©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¬?*
+*â•­â”ˆâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ˆâŠ·*
+*â”ƒ1 â”‚â¯â¯â—¦ AUDIO DOWNLOAD* ðŸŽ¶
+*â”ƒ2 â”‚â¯â¯â—¦ VOICE DOWNLOAD* ðŸŽ¤
+*â•°â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”ˆâŠ·*
 
 *Github Repo:* *https://github.com/deviltech567/DEVIL-TECH-MD*
 
-*??????? ?? ????? ????  ??£Ä*`;
+*ã‹›ð™¿ð™¾ðš†ð™´ðšð™³ ð™±ðšˆ ð™³ð™´ðš…ð™¸ð™» ðšƒð™´ð™²ð™·  ã€½ï¸ï¼¤*`;
         
         let contextInfo = {
             mentionedJid: [m.sender],
@@ -61,7 +65,7 @@ cmd({
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363395467876104@newsletter',
-                newsletterName: '????? ???? ??',
+                newsletterName: 'á™á´Éªá´… Îá´‡xá´œêœ± ã€½ï¸ ï¼¤',
                 serverMessageId: 143
             }
         };
@@ -75,7 +79,7 @@ cmd({
     const messageID = sentMsg.key.id;
 
         // React to the thumbnail message
-        await conn.sendMessage(from, { react: { text: '?', key: sentMsg.key } });
+        await conn.sendMessage(from, { react: { text: 'ðŸŽ§', key: sentMsg.key } });
 
         // Event listener to capture reply
         conn.ev.on('messages.upsert', async (messageUpdate) => {
@@ -100,10 +104,21 @@ cmd({
       mimetype: "audio/mpeg",
       ptt: true, // PTT enabled
     }, { quoted: quotedMessage }); mp3Url = voice;
-                } else
+                } else {
+                    return await reply("âŒ Invalid choice! Reply with 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, or 2.1, 2.2, 2.3, 2.4, 2.5, 2.6.");
+                }
 
-  } catch (error) {
-    console.error(error);
-    reply("*An Error Occurred While Processing Your Request ?*");
-  }
+                await conn.sendMessage(from, {
+                    image: { url: yts.thumbnail },
+                    caption: `Here's your video, *${yts.title}* ðŸŽ¶ Enjoy!\n\n> ${yts.title}`
+                }, { quoted: mek });
+
+                await conn.sendMessage(from, { text: 'âœ… Media Upload Successfull âœ…', edit: msg.key });
+            }
+        });
+
+    } catch (e) {
+        console.log(e);
+        reply("An error occurred. Please try again later.");
+    }
 });
